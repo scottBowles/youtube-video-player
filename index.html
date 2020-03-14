@@ -70,10 +70,12 @@
         <div id=form-holder>
           <form id="search-bar" action="" method="">
             <input type="search" placeholder="Search">
-            <button class="svgHolder">
-              <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
-                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" class="style-scope yt-icon"></path>
-              </svg>
+            <button>
+              <div id="button-svg-holder">
+                <svg id="search-magnifying-glass" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                  <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" class="style-scope yt-icon"></path>
+                </svg>
+              </div>
             </button>
           </form>
         </div>
@@ -106,108 +108,160 @@
           </div>
        </div>
       </nav>
-      <div id="main-container">
-        <div id="main">
-          <section id="main-video">
-            <figure>
-              <video></video>
-              <figcaption>Contributing to Open Source Part I: The Easy Way</figcaption>
-            </figure>
-            <footer>
+      <div id="content-container">
+        <div id="main-container">
+          <iframe id="main-video" width="560" height="315" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div id="main-below-video">
+            <h1>Contributing to Open Source Part I: The Easy Way</h1>
+            <section id="video-footer">
               <div id="footer-left">
                 <span>54,656 views</span>
+                <span id="dot">.</span>
                 <time datetime="2014-02-27">Feb 27, 2014</time>
               </div>
               <div id="footer-right">
-                <div id="video-thumbs-up"></div>
-                <div id="video-thumbs-down"></div>
-                <div id="share"></div>
-                <div id="save"></div>
-                <div id="video-menu"></div>
-              </div>
-            </footer>
-          </section>
-          <section id="description-section">
-            <div id="publisher">
-              <div id="publisher-avatar"></div>
-              <div id="name-and-subs">
-                <div id="publisher-name"></div>
-                <div id="publisher-subscribers"></div>
-              </div>
-              <div id="subscribe-button"></div>
-            </div>
-            <div id="description">
-              <div></div>
-              <div id="show-more"></div>
-            </div>
-          </section>
-          <section id="comments">
-            <header>
-              <span id="number-of-comments"></span>
-              <span id="comments-sort-menu"></span>
-            </header>
-            <div id="add-comment">
-              <div id="user-avatar"></div>
-              <form action="" method="">
-                <input type="text" name="new-comment">
-              </form>
-            </div>
-            <div class="comment-container">
-              <div class="commenter-avatar-container">
-                <img class="commenter-avatar">
-              </div>
-              <div class="comment-main">
-                <div class="commenter-and-comment-age">
-                  <div class="commenter"></div>
-                  <div class="comment-age"></div>
+                <div>
+                  <div id="video-thumbs-up">
+                    <div class="svgHolder">
+                      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      403
+                    </div>
+                  </div>
                 </div>
-                <div class="comment"></div>
-                <div class="comment-response-container">
-                  <div class="comment-thumbs-up"></div>
-                  <div class="comment-thumbs-down"></div>
-                  <div class="reply-button"></div>
+                <div>
+                  <div id="video-thumbs-down">
+                    <div class="svgHolder">
+                      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      19
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="comment-container">
-              <div class="commenter-avatar-container">
-                <img class="commenter-avatar">
-              </div>
-              <div class="comment-main">
-                <div class="commenter-and-comment-age">
-                  <div class="commenter"></div>
-                  <div class="comment-age"></div>
+                <div>
+                  <div id="share">
+                    <div class="svgHolder">
+                      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <path d="M11.7333 8.26667V4L19.2 11.4667L11.7333 18.9333V14.56C6.4 14.56 2.66667 16.2667 0 20C1.06667 14.6667 4.26667 9.33333 11.7333 8.26667Z" class="style-scope yt-icon"></path>
+                      </svg>
+                    </div>
+                    <div id="share-text">
+                      SHARE
+                    </div>
+                  </div>
                 </div>
-                <div class="comment"></div>
-                <div class="comment-response-container">
-                  <div class="comment-thumbs-up"></div>
-                  <div class="comment-thumbs-down"></div>
-                  <div class="reply-button"></div>
+                <div>
+                  <div id="save">
+                    <div class="svgHolder">
+                      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z" class="style-scope yt-icon"></path>
+                      </svg>
+                    </div>
+                    <div id="save-text">
+                      SAVE
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div id="video-menu">
+                    <div class="svgHolder">
+                      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="19" cy="12" r="2" class="style-scope yt-icon"></circle>
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="comment-container">
-              <div class="commenter-avatar-container">
-                <img class="commenter-avatar">
-              </div>
-              <div class="comment-main">
-                <div class="commenter-and-comment-age">
-                  <div class="commenter"></div>
-                  <div class="comment-age"></div>
+            </section id="">
+            <hr>
+            <section id="description-section">
+              <div id="publisher">
+                <div id="publisher-avatar"></div>
+                <div id="name-and-subs">
+                  <div id="publisher-name"></div>
+                  <div id="publisher-subscribers"></div>
                 </div>
-                <div class="comment"></div>
-                <div class="comment-response-container">
-                  <div class="comment-thumbs-up"></div>
-                  <div class="comment-thumbs-down"></div>
-                  <div class="reply-button"></div>
+                <div id="subscribe-button"></div>
+              </div>
+              <div id="description">
+                <div></div>
+                <div id="show-more"></div>
+              </div>
+            </section>
+            <section id="comments">
+              <header>
+                <span id="number-of-comments"></span>
+                <span id="comments-sort-menu"></span>
+              </header>
+              <div id="add-comment">
+                <div id="user-avatar"></div>
+                <form action="" method="">
+                  <input type="text" name="new-comment">
+                </form>
+              </div>
+              <div class="comment-container">
+                <div class="commenter-avatar-container">
+                  <img class="commenter-avatar">
+                </div>
+                <div class="comment-main">
+                  <div class="commenter-and-comment-age">
+                    <div class="commenter"></div>
+                    <div class="comment-age"></div>
+                  </div>
+                  <div class="comment"></div>
+                  <div class="comment-response-container">
+                    <div class="comment-thumbs-up"></div>
+                    <div class="comment-thumbs-down"></div>
+                    <div class="reply-button"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+              <div class="comment-container">
+                <div class="commenter-avatar-container">
+                  <img class="commenter-avatar">
+                </div>
+                <div class="comment-main">
+                  <div class="commenter-and-comment-age">
+                    <div class="commenter"></div>
+                    <div class="comment-age"></div>
+                  </div>
+                  <div class="comment"></div>
+                  <div class="comment-response-container">
+                    <div class="comment-thumbs-up"></div>
+                    <div class="comment-thumbs-down"></div>
+                    <div class="reply-button"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-container">
+                <div class="commenter-avatar-container">
+                  <img class="commenter-avatar">
+                </div>
+                <div class="comment-main">
+                  <div class="commenter-and-comment-age">
+                    <div class="commenter"></div>
+                    <div class="comment-age"></div>
+                  </div>
+                  <div class="comment"></div>
+                  <div class="comment-response-container">
+                    <div class="comment-thumbs-up"></div>
+                    <div class="comment-thumbs-down"></div>
+                    <div class="reply-button"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-      </div>
-      <div id="sidebar">
-        Sidebar Container
+        <div id="sidebar">
+          Sidebar Container
+        </div>
       </div>
     </div>
     <script src="" async defer></script>

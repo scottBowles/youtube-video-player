@@ -54,11 +54,16 @@ table {
 
 html, body {
   height: 100%;
+  font-family: "American Gothic", sans-serif;
 }
 
 #container {
   position: relative;
   height: 100%;
+}
+
+#content-container {
+  margin-top: 56px;
 }
 
 /*    TOP BAR    */
@@ -75,6 +80,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 #right-aligned-nav-links {
@@ -96,20 +102,14 @@ nav {
   height: 100%;
 }
 
-#sidebar{
-  background-color: lightblue;
-  margin-left: 60%;
-  margin-top: 56px;
-}
-
-.svgHolder {
+nav .svgHolder {
   display: block;
   margin: auto;
   height: 24px;
   width: 40px;
 }
 
-svg {
+nav svg {
   display: block;
   height: 100%;
   width: 100%;
@@ -128,20 +128,49 @@ svg {
   opacity: 1;
 }
 
+#form-holder {
+  width: 58%;
+  margin-right: 44px;
+}
+
 #search-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
+  border: purple 1px solid;
+  height: 56px;
+  width: 100%;
 }
 
 #search-bar input {
-  display: inline-block;
-  margin: auto;
+  border: rgba(0, 0, 0, .2) 1px solid;
+  border-right: 0;
+  border-radius: 1px 0 0 1px;
+  height: 32px;
+  width: 80%;
+  padding: 1px 0 3px 13px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "American Gothic", sans-serif;
 }
 
 #search-bar button {
-  display: inline-block;
+  width: 66px;
+  height: 32px;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, .025);
+}
+
+#button-svg-holder {
+  display: block;
   margin: auto;
+  height: 20px;
+  width: 20px;
+}
+
+#search-magnifying-glass {
+  opacity: .45;
 }
 
 #profile-photo-holder {
@@ -156,38 +185,166 @@ svg {
   margin-bottom: 10px;
 }
 
+/*    MAIN    */
+
 #main-container{
   width: 60%;
-  border: lightgreen 1px solid;
+  height: 100%;
+  border: lightgreen 2px solid;
+  padding: 22px;
   position: absolute;
   left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
-#main {
-  position: absolute;
-  right: 0px;
+#main-video {
+  width: 610px;
+  height: 381px;
+}
+
+#main-below-video {
   border: lightsteelblue 1px solid;
-  width: 650px;
+  width: 610px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-#main-video {
-  border: turquoise 1px dotted;
+#main-below-video h1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
 }
 
-#main-video video {
-  background-color: lightseagreen;
+#video-footer {
+  position: relative;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  color: rgba(0, 0, 0, .6);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#dot {
+  position: relative;
+  bottom: 3px;
+}
+
+#footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+}
+
+#footer-right * {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 2rem;
+}
+
+#video-thumbs-up, #video-thumbs-down {
+  width: 60px;
+}
+
+#share, #save {
+  width: 100px;
+}
+
+#share-text, #save-text {
+  position: relative;
+  right: 6px;
+}
+
+#video-menu {
+  width: 40px !important;
+}
+
+#video-footer .svgHolder {
+  display: block;
+  margin: auto;
+  height: 27px;
+  width: 45px;
+}
+
+#footer-right svg {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  opacity: .47;
+  position: relative;
+  left: 4px;
+}
+
+#footer-right * * {
+  padding: 2px 2px 2px 0;
+}
+
+hr {
   width: 100%;
 }
 
-#main-video figcaption {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-size: 19px;
+/*    SIDEBAR    */
+
+#sidebar{
+  background-color: lightblue;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 40%;
 }
 
-#main-video footer {
-   
+
+
+@media (max-width: 1100px) {
+
+  #main-video {
+    width: 100%;
+    height: 34.5vw;
+  }
+
+  #main-below-video {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  
+  #sidebar {
+    display: none;
+  }
+
+  #main-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  #main-video {
+    width: 610px;
+    height: 381px;
+  }
+
+}
+
+@media (max-width: 654px) {
+
+  #main-video {
+    width: 100%;
+    height: 57vw;
+  }
+
+}
+
+@media (max-width: 585px) {
+  #footer-left time, #dot {
+    display: none;
+  }
 }
