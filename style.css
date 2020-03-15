@@ -23,7 +23,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -54,7 +56,7 @@ table {
 
 html, body {
   height: 100%;
-  font-family: "American Gothic", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 #container {
@@ -88,16 +90,18 @@ nav {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  min-width: 225px;
+  min-width: 209px;
   height: 100%;
-  border: red dotted 1px;
+}
+
+#right-aligned-nav-links div {
+  margin: auto;
 }
 
 #left-aligned-nav-links {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  border: red dotted 1px;
   min-width: 150px;
   height: 100%;
 }
@@ -138,7 +142,6 @@ nav svg {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  border: purple 1px solid;
   height: 56px;
   width: 100%;
 }
@@ -152,7 +155,7 @@ nav svg {
   padding: 1px 0 3px 13px;
   font-size: 15px;
   font-weight: 300;
-  font-family: "American Gothic", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 #search-bar button {
@@ -160,6 +163,7 @@ nav svg {
   height: 32px;
   border-radius: 0 3px 3px 0;
   background-color: rgba(0, 0, 0, .025);
+  border: 1px solid rgba(0, 0, 0, .15);
 }
 
 #button-svg-holder {
@@ -174,30 +178,28 @@ nav svg {
 }
 
 #profile-photo-holder {
-  width: 50px;
-  height: 100%;
+  width: 36px;
+  height: 56%;
+  margin: 0 12px !important;
 }
 
-#profilePhoto {
-  height: 60%;
+.profilePhoto {
+  height: 100%;
   border-radius: 50%;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 /*    MAIN    */
 
 #main-container{
   width: 60%;
-  height: 100%;
-  border: lightgreen 2px solid;
-  padding: 22px;
+  padding: 24px;
   position: absolute;
   left: 0px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
+  background-color: rgba(0, 0, 0, .025);
 }
 
 #main-video {
@@ -206,7 +208,6 @@ nav svg {
 }
 
 #main-below-video {
-  border: lightsteelblue 1px solid;
   width: 610px;
   display: flex;
   flex-direction: column;
@@ -289,12 +290,133 @@ nav svg {
 
 hr {
   width: 100%;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#publisher {
+  height: 65px;
+  position: relative;
+  margin-top: 8px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+#publisher-avatar {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+#name-and-subs {
+  float: left;
+  position: absolute;
+  left: 65px;
+  top: 10px;
+}
+
+#publisher-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, .8);
+}
+
+#publisher-subscribers {
+  color: rgba(0, 0, 0, .6);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#subscribe-button {
+  color: #fff;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 0;
+  background-color: #c00;
+  width: 113.5px;
+  height: 36px;
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  margin-top: -26px;
+}
+
+#description {
+  height: 60px;
+  max-width: 600px;
+  margin: 8px 65px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#show-more {
+  color: rgba(0, 0, 0, .6);
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 65px;
+  margin-bottom: 15px;
+}
+
+#comments header {
+  margin-top: 15px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#number-of-comments {
+  margin-right: 21px;
+}
+
+#comments .svgHolder {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  opacity: .45;
+  margin: 0 10px;
+}
+
+#sort-by {
+  color: rgba(0, 0, 0, .6);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#add-comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 20px 0;
+}
+
+#user-avatar {
+  height: 40px;
+}
+
+#comment-form {
+  height: 40px;
+  width: 90%;
+}
+
+#new-comment {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .15);
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 2em;
+  width: 100%;
 }
 
 /*    SIDEBAR    */
 
 #sidebar{
-  background-color: lightblue;
+  background-color: rgba(0, 0, 0, .025);
+  border: 3px solid lightskyblue;
   position: absolute;
   right: 0;
   height: 100%;

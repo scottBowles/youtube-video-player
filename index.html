@@ -103,7 +103,7 @@
           </div>
           <div id="profile-photo-holder">
             <a href="">
-              <img src="google-profile-photo.jpg" id="profilePhoto">
+              <img src="google-profile-photo.jpg" class="profilePhoto">
             </a>
           </div>
        </div>
@@ -182,27 +182,38 @@
             <hr>
             <section id="description-section">
               <div id="publisher">
-                <div id="publisher-avatar"></div>
+                <a href="https://www.youtube.com/channel/UCk0b0VTnJxXbxupXJ4D2yjQ">
+                  <img src="https://yt3.ggpht.com/a/AATXAJyfp0akR7PCq72FcsHL1DrLUbzqKet6_ZK6Nw=s48-c-k-c0xffffffff-no-rj-mo" class="avatar" id="publisher-avatar"></img>
+                </a>
                 <div id="name-and-subs">
-                  <div id="publisher-name"></div>
-                  <div id="publisher-subscribers"></div>
+                  <div id="publisher-name">The Odin Project</div>
+                  <div id="publisher-subscribers"><span>938</span><span> subscribers</span></div>
                 </div>
-                <div id="subscribe-button"></div>
+                <button id="subscribe-button">SUBSCRIBE</button>
               </div>
-              <div id="description">
-                <div></div>
-                <div id="show-more"></div>
-              </div>
+              <div id="description">How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open source software projects are typically looking for.  As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails.  You can find more information about that project at <a href="http://theodinproject.com">http://theodinproject.com</a>.</div>
+              <div id="show-more">SHOW MORE</div>
             </section>
+            <hr>
             <section id="comments">
               <header>
-                <span id="number-of-comments"></span>
-                <span id="comments-sort-menu"></span>
+                <span id="number-of-comments">15 Comments</span>
+                <span class="svgHolder">
+                  <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                    <path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" class="style-scope yt-icon"></path>
+                    <path d="M0 0h24v24H0z" fill="none" class="style-scope yt-icon"></path>
+                  </svg>
+                </span>
+                <span id="sort-by">SORT BY</span>
               </header>
               <div id="add-comment">
-                <div id="user-avatar"></div>
-                <form action="" method="">
-                  <input type="text" name="new-comment">
+                <div id="user-avatar">
+                  <a href="">
+                    <img src="google-profile-photo.jpg" class="profilePhoto">
+                  </a>
+                </div>
+                <form action="" method="" id="comment-form">
+                  <input type="text" name="new-comment" placeholder="Add a public comment..." id="new-comment">
                 </form>
               </div>
               <div class="comment-container">
