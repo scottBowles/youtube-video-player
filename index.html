@@ -9,6 +9,7 @@
     <title>YouTube Video Player Page Clone</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -121,7 +122,7 @@
                   <time datetime="2014-02-27">Feb 27, 2014</time>
                 </h3>
               </div>
-              <div id="footer-right">
+              <div id="footer-right" class="interact-button-text">
                 <div id="video-thumbs-up">
                   <div class="svgHolder">
                     <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
@@ -179,12 +180,12 @@
                 </a>
                 <div id="name-and-subs">
                   <h2 id="publisher-name">The Odin Project</h2>
-                  <div id="publisher-subscribers"><span>938</span><span> subscribers</span></div>
+                  <h3><span>938</span><span> subscribers</span></h3>
                 </div>
                 <button id="subscribe-button">SUBSCRIBE</button>
               </div>
               <p id="description">How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open source software projects are typically looking for.  As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails.  You can find more information about that project at <a href="http://theodinproject.com">http://theodinproject.com</a>.</p>
-              <div id="show-more">SHOW MORE</div>
+              <div id="show-more" class="interact-button-text">SHOW MORE</div>
             </section>
             <hr>
             <section id="comments">
@@ -196,10 +197,10 @@
                     <path d="M0 0h24v24H0z" fill="none" class="style-scope yt-icon"></path>
                   </svg>
                 </span>
-                <span id="sort-by">SORT BY</span>
+                <span class="interact-button-text">SORT BY</span>
               </header>
               <div id="add-comment">
-                <div id="user-avatar">
+                <div class="commenter-photo">
                   <a href="">
                     <img src="images/google-profile-photo.jpg" class="profilePhoto">
                   </a>
@@ -210,52 +211,161 @@
               </div>
               <div class="comment-container">
                 <div class="commenter-avatar-container">
-                  <img class="commenter-avatar">
+                  <img src="images/default-profile-photo.jpg" class="profilePhoto commenter-photo">
                 </div>
                 <div class="comment-main">
-                  <div class="commenter-and-comment-age">
-                    <div class="commenter"></div>
-                    <div class="comment-age"></div>
-                  </div>
-                  <div class="comment"></div>
-                  <div class="comment-response-container">
-                    <div class="comment-thumbs-up"></div>
-                    <div class="comment-thumbs-down"></div>
-                    <div class="reply-button"></div>
+                  <div class="comment-right-container">
+                    <div>
+                      <span class="commenter-name">An actual unnamed commenter</span>
+                      <span class="comment-age">1 year ago (edited)</span>
+                    </div>
+                    <div class="comment">A remark to what happening at 04:12 is: after clicking "Propose file change", it now goes to commit page instead of the pull request screen as shown on the video. One need to click the commit name (e.g. patch-1 if it is the first commit of your branch) near the top of the screen to go to the pull request screen.</div>
+                    <div class="comment-read-more">Read more</div>
+                    <div class="comment-response-container">
+                      <div class="interact-button-text">
+                        <div class="comment-thumbs-up">
+                          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="interact-button-text">
+                        <div class="comment-thumbs-down">
+                          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="reply-button interact-button-text">REPLY</div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="comment-container">
                 <div class="commenter-avatar-container">
-                  <img class="commenter-avatar">
+                  <img src="images/kindo-profile-photo.jpg" class="profilePhoto commenter-photo">
                 </div>
                 <div class="comment-main">
-                  <div class="commenter-and-comment-age">
-                    <div class="commenter"></div>
-                    <div class="comment-age"></div>
-                  </div>
-                  <div class="comment"></div>
-                  <div class="comment-response-container">
-                    <div class="comment-thumbs-up"></div>
-                    <div class="comment-thumbs-down"></div>
-                    <div class="reply-button"></div>
+                  <div class="comment-right-container">
+                    <div>
+                      <span class="commenter-name">Kindo</span>
+                      <span class="comment-age">1 year ago</span>
+                    </div>
+                    <div class="comment">Kindo, formerly 'The Reign of Kindo', didn't actually respond to this video. But they're a great band. Check them out <a href="http://thereignofkindo.com/home/">here</a>!</div>
+                    <div class="comment-read-more"></div>
+                    <div class="comment-response-container">
+                      <div class="interact-button-text">
+                        <div class="comment-thumbs-up">
+                          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="interact-button-text">
+                        <div class="comment-thumbs-down">
+                          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="reply-button interact-button-text">REPLY</div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="comment-container">
                 <div class="commenter-avatar-container">
-                  <img class="commenter-avatar">
+                  <img src="images/artosis-profile-photo.jpg" class="profilePhoto commenter-photo">
                 </div>
                 <div class="comment-main">
-                  <div class="commenter-and-comment-age">
-                    <div class="commenter"></div>
-                    <div class="comment-age"></div>
+                  <div class="comment-right-container">
+                    <div>
+                      <span class="commenter-name">ArtosisTV</span>
+                      <span class="comment-age">2 year ago</span>
+                    </div>
+                    <div class="comment">Artosis didn't comment here either. Weird. As it happens, I didn't want to use real people's accounts, excepting my own.</div>
+                    <div class="comment-read-more"></div>
+                    <div class="comment-response-container">
+                      <div class="interact-button-text">
+                        <div class="comment-thumbs-up">
+                          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="interact-button-text">
+                        <div class="comment-thumbs-down">
+                          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="reply-button interact-button-text">REPLY</div>
+                    </div>
                   </div>
-                  <div class="comment"></div>
-                  <div class="comment-response-container">
-                    <div class="comment-thumbs-up"></div>
-                    <div class="comment-thumbs-down"></div>
-                    <div class="reply-button"></div>
+                </div>
+              </div>
+              <div class="comment-container">
+                <div class="commenter-avatar-container">
+                  <img src="images/the-hill-profile-photo.jpg" class="profilePhoto commenter-photo">
+                </div>
+                <div class="comment-main">
+                  <div class="comment-right-container">
+                    <div>
+                      <span class="commenter-name">The Hill</span>
+                      <span class="comment-age">2 year ago</span>
+                    </div>
+                    <div class="comment">I'm listening to The Hill's Rising while typing this, making it an easy example. If you're into populist politics, or just want to hear a perspective ignored on the big channels, Krystal and Saagar are a good choice.</div>
+                    <div class="comment-read-more"></div>
+                    <div class="comment-response-container">
+                      <div class="interact-button-text">
+                        <div class="comment-thumbs-up">
+                          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="interact-button-text">
+                        <div class="comment-thumbs-down">
+                          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="reply-button interact-button-text">REPLY</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-container">
+                <div class="commenter-avatar-container">
+                  <img src="images/aimee-nolte-profile-photo.jpg" class="profilePhoto commenter-photo">
+                </div>
+                <div class="comment-main">
+                  <div class="comment-right-container">
+                    <div>
+                      <span class="commenter-name">Aimee Nolte Music</span>
+                      <span class="comment-age">3 year ago</span>
+                    </div>
+                    <div class="comment">Interested in jazz piano? Aimee Nolte is great. She has a bunch of videos to teach jazz piano concepts. She's super good and also super humble. What more could you want?</div>
+                    <div class="comment-read-more"></div>
+                    <div class="comment-response-container">
+                      <div class="interact-button-text">
+                        <div class="comment-thumbs-up">
+                          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="interact-button-text">
+                        <div class="comment-thumbs-down">
+                          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="reply-button interact-button-text">REPLY</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -267,7 +377,7 @@
             <header>
               <div id="up-next">Up next</div>
               <div id="autoplay-next">
-                <div id="autoplay-text">AUTOPLAY</div>
+                <div id="autoplay-text" class="interact-button-text">AUTOPLAY</div>
                 <button id="autoplay-toggle">
                   <div id="autoplay-button-graphic"></div>
                 </button>
@@ -284,10 +394,10 @@
           </section>
           <hr>
           <div class="recommended-video-card">
-            <img src="images/stats-serral-poster.webp">
+            <img src="images/kindo-hold-out-poster.webp">
             <div class="video-card-info">
-              <div class="video-card-title">Stats vs Serral PvZ - Grand Final - 2018 WCS Global Finals - StarCraft II</div>
-              <h3 class="video-card-channel">StarCraft Esports</h3>
+              <div class="video-card-title">The Reign of Kindo - Hold Out</div>
+              <h3 class="video-card-channel">Candyrat Records</h3>
               <h3 class="video-card-meta">Recommended for you</h3>
             </div>
           </div>
@@ -300,10 +410,10 @@
             </div>
           </div>
           <div class="recommended-video-card">
-            <img src="images/zest-rogue-2020-katowice-poster.webp">
+            <img src="images/jeff-buckley-lover-poster.webp">
             <div class="video-card-info">
-              <div class="video-card-title">SC2 - Zest vs. Rogue - IEM Katowice 2020 - Grand Finals</div>
-              <h3 class="video-card-channel">ESL Archives</h3>
+              <div class="video-card-title">Jeff Buckley - Lover, You Should've Come Over (Audio)</div>
+              <h3 class="video-card-channel">Jeff Buckley Music</h3>
               <h3 class="video-card-meta">Recommended for you</h3>
             </div>
           </div>
@@ -316,10 +426,18 @@
             </div>
           </div>
           <div class="recommended-video-card">
-            <img src="images/jeff-buckley-lover-poster.webp">
+            <img src="images/ascension-poster.webp">
             <div class="video-card-info">
-              <div class="video-card-title">Jeff Buckley - Lover, You Should've Come Over (Audio)</div>
-              <h3 class="video-card-channel">Jeff Buckley Music</h3>
+              <div class="video-card-title">Church of the Ascension Livestream | March 15 at 10am</div>
+              <h3 class="video-card-channel">Church of the Ascension Pittsburgh</h3>
+              <h3 class="video-card-meta">Recommended for you</h3>
+            </div>
+          </div>
+          <div class="recommended-video-card">
+            <img src="images/stats-serral-poster.webp">
+            <div class="video-card-info">
+              <div class="video-card-title">Stats vs Serral PvZ - Grand Final - 2018 WCS Global Finals - StarCraft II</div>
+              <h3 class="video-card-channel">StarCraft Esports</h3>
               <h3 class="video-card-meta">Recommended for you</h3>
             </div>
           </div>
@@ -329,6 +447,54 @@
               <div class="video-card-title">Weekend Update: Girl You Wish You Hadn't Started a Conversation with on Christmas - SNL</div>
               <h3 class="video-card-channel">Saturday Night Live</h3>
               <h3 class="video-card-meta">3,563K views</h3>
+            </div>
+          </div>
+          <div class="recommended-video-card">
+            <img src="images/debussy-poster.webp">
+            <div class="video-card-info">
+              <div class="video-card-title">Claude Debussy - Arabesque No. 1 ( one hour )</div>
+              <h3 class="video-card-channel">Magda Odobescu</h3>
+              <h3 class="video-card-meta">Recommended for you</h3>
+            </div>
+          </div>
+          <div class="recommended-video-card">
+            <img src="images/boyz-2-men-poster.webp">
+            <div class="video-card-info">
+              <div class="video-card-title">Boyz II Men - Motownphilly (Official Video)</div>
+              <h3 class="video-card-channel">Boyz II Men</h3>
+              <h3 class="video-card-meta">Recommended for you</h3>
+            </div>
+          </div>
+          <div class="recommended-video-card">
+            <img src="images/joanna-newsom-poster.webp">
+            <div class="video-card-info">
+              <div class="video-card-title">Joanna Newsom - Sawdust and Diamonds (11.16.06)</div>
+              <h3 class="video-card-channel">peachplumpeariffic1</h3>
+              <h3 class="video-card-meta">Recommended for you</h3>
+            </div>
+          </div>
+          <div class="recommended-video-card">
+            <img src="images/zest-rogue-2020-katowice-poster.webp">
+            <div class="video-card-info">
+              <div class="video-card-title">SC2 - Zest vs. Rogue - IEM Katowice 2020 - Grand Finals</div>
+              <h3 class="video-card-channel">ESL Archives</h3>
+              <h3 class="video-card-meta">Recommended for you</h3>
+            </div>
+          </div>
+          <div class="recommended-video-card">
+            <img src="images/gorecki-poster.webp">
+            <div class="video-card-info">
+              <div class="video-card-title">Gorecki - Symphony No. 3 - Movement 1. Lento - sostenuto tranquillo ma cantabile. Op. 36 (1976) [HQ]</div>
+              <h3 class="video-card-channel">Nikolaus Williams</h3>
+              <h3 class="video-card-meta">Recommended for you</h3>
+            </div>
+          </div>
+          <div class="recommended-video-card">
+            <img src="images/treantmonk-poster.jpg">
+            <div class="video-card-info">
+              <div class="video-card-title">Treantmonk's Guide to Wizards: Introduction</div>
+              <h3 class="video-card-channel">Treantmonk's Temple</h3>
+              <h3 class="video-card-meta">Recommended for you</h3>
             </div>
           </div>
         </div>
