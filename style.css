@@ -49,6 +49,12 @@ table {
 	border-spacing: 0;
 }
 
+a, a:link, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
 
 * {
   box-sizing: border-box;
@@ -209,7 +215,7 @@ nav svg {
 /*    MAIN    */
 
 #main-container{
-  width: 60%;
+  width: 58%;
   padding: 24px;
   position: absolute;
   left: 0px;
@@ -221,12 +227,12 @@ nav svg {
 }
 
 #main-video {
-  width: 610px;
+  width: 576px;
   height: 381px;
 }
 
 #main-below-video {
-  width: 610px;
+  width: 576px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -355,7 +361,7 @@ hr {
 
 #description {
   height: 60px;
-  max-width: 600px;
+  max-width: 576px;
   margin: 8px 65px;
   overflow: hidden;
   font-size: 14px;
@@ -421,19 +427,24 @@ hr {
 .comment-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
-.comment-main {
-  width: 91%;
+.commenter-avatar-container {
+  width: 56px;
+  height: 40px;
 }
 
 .comment-right-container {
-  width: 85%;
+  max-width: 480px;
 }
 
-.commenter-name,
-.comment-age {
+.comment-spacer {
+  width: 40px
+}
+
+.comment-main 
+.commenter-name, .comment-age {
   font-size: 13px;
   font-weight: 500;
 }
@@ -487,7 +498,7 @@ hr {
   position: absolute;
   right: 0;
   height: 100%;
-  width: 40%;
+  width: 42%;
   padding: 24px 24px 0 0;
 }
 
@@ -616,7 +627,7 @@ hr {
   }
 
   #main-video {
-    width: 610px;
+    width: 576px;
     height: 381px;
   }
 
